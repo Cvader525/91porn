@@ -39,7 +39,7 @@ do
     esac
 done
 
-proxy="--socks 112.124.51.136:1080"
+#proxy="--socks 112.124.51.136:1080"
 
 
 checkvid(){
