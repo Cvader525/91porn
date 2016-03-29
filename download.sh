@@ -11,7 +11,7 @@ fi
 
 urldecode() {
 
-    echo $(curl -d "content=$(cat ./91/down_Json)&charsetSelect=utf-8&de=UrlDecode%E8%A7%A3%E7%A0%81" http://tool.chinaz.com/tools/urlencode.aspx | grep -E 'file'  |sed 's/<[^>]*>//g' ) > ./91/down_Json
+    echo $(curl -d "content=$(cat ./91/down_Json)&charsetSelect=utf-8&de=UrlDecode%E8%A7%A3%E7%A0%81" http://tool.chinaz.com/tools/urlencode.aspx | grep -E 'file'  |sed 's/<[^>]*>//g'| sed  's/\&amp;/\&/g' ) > ./91/down_Json
 
 }
 
